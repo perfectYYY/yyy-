@@ -1,0 +1,21 @@
+material MyCube/TextureWithWhiteBase
+{
+  technique
+  {
+    pass
+    {
+      diffuse 1.0 1.0 1.0 1.0 
+      ambient 1.0 1.0 1.0 1.0
+    }
+    pass
+    {
+      scene_blend alpha_blend
+      depth_func equal 
+
+      texture_unit
+      {
+        texture ../textures/instrument.png
+      }
+    }
+  }
+}

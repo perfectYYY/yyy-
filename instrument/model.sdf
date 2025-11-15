@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="instrument">
+    <static>false</static> <link name="link">
+      
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.25 0.25 0.25</size> </box>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>src://instrument/meshes/instrument.dae</uri>
+          </mesh>
+        </geometry>
+        
+        <material>
+          <script>
+            <uri>src://instrument/materials/scripts/instrument.material</uri>
+            <name>MyCube/TextureWithWhiteBase</name>
+          </script>
+        </material>
+      </visual>
+      
+    </link>
+  </model>
+</sdf>
